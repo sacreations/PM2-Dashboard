@@ -46,6 +46,7 @@ cp .env.local.example .env.local
 
 - Generate a random string for `NEXTAUTH_SECRET`
 - Set your admin username and password
+- Optional: Change the `PORT` if you want to run the server on a different port
 
 ### Development
 
@@ -57,7 +58,8 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The server will run on the port specified in your `.env.local` file (defaults to 3000).
+Open [http://localhost:3000](http://localhost:3000) (or your custom port) with your browser to see the result.
 
 ### Production
 
