@@ -7,6 +7,7 @@ import Sidebar from '@/components/layout/Sidebar';
 import ProcessList from '@/components/dashboard/ProcessList';
 import LogViewer from '@/components/dashboard/LogViewer';
 import RefreshIntervalSelector from '@/components/dashboard/RefreshIntervalSelector';
+import PwaInstaller from '@/components/pwa/PwaInstaller';
 
 export default function Dashboard() {
   const { data: session } = useSession();
@@ -52,6 +53,8 @@ export default function Dashboard() {
           </div>
         </main>
       </div>
+      
+      <PwaInstaller />
     </div>
   );
 }
