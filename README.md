@@ -15,6 +15,7 @@
     <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
     <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCSS" />
     <img src="https://img.shields.io/badge/PM2-2B037A?style=for-the-badge&logo=pm2&logoColor=white" alt="PM2" />
+    <img src="https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white" alt="PWA" />
   </p>
 </div>
 
@@ -28,6 +29,7 @@
 - ⏰ **Auto-logout** - Security feature for inactive sessions
 - ⚙️ **Configurable** - Adjust refresh intervals to your needs
 - 🖥️ **System Monitoring** - CPU and RAM usage tracking
+- 📲 **PWA Support** - Install as a native app on desktop and mobile devices
 
 ## 🛠️ Tech Stack
 
@@ -38,6 +40,7 @@
 - **Next Auth.js** for authentication
 - **Express backend** for PM2 communication
 - **PM2** for process management
+- **next-pwa** for Progressive Web App support
 
 ## 🚀 Getting Started
 
@@ -101,6 +104,22 @@ yarn build
 yarn start
 ```
 
+### PWA Installation
+
+The dashboard supports Progressive Web App (PWA) features, allowing you to install it as a native application:
+
+1. Access the dashboard from a modern browser on desktop or mobile
+2. Look for the "Install" button in the browser's address bar or menu
+3. Follow the prompts to install the app
+4. Once installed, the app will work offline with limited functionality
+
+To generate PWA icons before deployment:
+
+```bash
+# Place your high-resolution logo at public/pm2-logo.png
+npm run generate-icons
+```
+
 ## 📁 File Structure
 
 ```text
@@ -122,10 +141,18 @@ pm2-dashboard/
 │   ├── auth/                # Authentication components
 │   ├── dashboard/           # Dashboard components
 │   ├── layout/              # Layout components
+│   ├── pwa/                 # PWA components
 │   ├── system/              # System monitoring components
 │   └── theme/               # Theme components
 │
 ├── public/                  # Static assets
+│   ├── icons/               # PWA icons
+│   ├── manifest.json        # PWA manifest
+│   └── sw.js                # Service worker
+│
+├── scripts/                 # Utility scripts
+│   └── generate-icons.js    # Script to generate PWA icons
+│
 ├── .env.local.example       # Example environment variables
 ├── next.config.js           # Next.js configuration
 ├── package.json             # Project dependencies
