@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles that apply to the whole app */
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 244, 244, 245;
+  --background-end-rgb: 255, 255, 255;
+}
+
+.dark {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 15, 23, 42;
+  --background-end-rgb: 30, 41, 59;
+}
+
+/* Make sure the body styles apply properly */
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: rgb(var(--background-start-rgb));
+}
+
+/* Move component styles to the top level to ensure they're processed */
+.btn {
+  @apply px-4 py-2 rounded-md font-medium text-sm transition-all;
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-gray-800 hover:bg-gray-300;
+}
+
+.btn-danger {
+  @apply bg-red-600 text-white hover:bg-red-700;
+}
+
+/* Dark mode overrides */
+.dark .bg-white {
+  @apply bg-gray-800;
+}
+
+.dark .text-gray-900 {
+  @apply text-white;
+}
+
+.dark .border-gray-200 {
+  @apply border-gray-700;
+}
