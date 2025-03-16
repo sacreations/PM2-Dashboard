@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p ${PORT:-3000}",
+    "dev": "next dev -p %PORT%", && echo $PORT || echo 3000)",
     "build": "next build",
-    "start": "next start -p ${PORT:-3000}",
-    "lint": "next lint"
+    "start": "node server.js", && echo $PORT || echo 3000)",
+    "lint": "next lint",
+    "predev": "node -e \"process.env.PORT||process.env.PORT||process.exit(0)\"",
+    "prestart": "node -e \"process.env.PORT||process.env.PORT||process.exit(0)\""
   },
   "dependencies": {
     "@types/node": "20.4.5",
