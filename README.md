@@ -24,7 +24,7 @@ A beautiful, responsive web dashboard for managing PM2 processes built with Next
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/pm2-dashboard.git
+git clone https://github.com/sacreations/pm2-dashboard.git
 cd pm2-dashboard
 ```
 
