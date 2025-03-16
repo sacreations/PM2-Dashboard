@@ -1,18 +1,50 @@
-# PM2 Dashboard
+<div align="center">
+  <h1>
+    <br>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="PM2" width="100" height="100">
+    <br>
+    PM2 Dashboard
+    <br>
+  </h1>
+  <p>A beautiful, responsive web dashboard for managing PM2 processes</p>
+  
+  <p>
+    <a href="#features">Features</a> •
+    <a href="#tech-stack">Tech Stack</a> •
+    <a href="#getting-started">Getting Started</a> •
+    <a href="#file-structure">File Structure</a> •
+    <a href="#security">Security</a> •
+    <a href="#license">License</a>
+  </p>
 
-A beautiful, responsive web dashboard for managing PM2 processes built with Next.js, React, TypeScript, and Tailwind CSS.
+  <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js">
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCSS">
+  <img src="https://img.shields.io/badge/PM2-2B037A?style=for-the-badge&logo=pm2&logoColor=white" alt="PM2">
+</div>
 
-## Features
+## ✨ Features
 
-- Secure authentication system using NextAuth.js
-- Real-time monitoring of PM2 processes
-- Process management (start, stop, restart, delete)
-- Process log viewer
-- Responsive design for desktop and mobile
-- Auto-logout after inactivity
-- Configurable refresh intervals
+- 🔒 **Secure Authentication** - Login system using NextAuth.js
+- 📊 **Real-time Monitoring** - Live updates of your PM2 processes
+- 🎛️ **Process Management** - Start, stop, restart, and delete processes
+- 📜 **Log Viewer** - View process logs in real-time
+- 📱 **Responsive Design** - Works on desktop and mobile devices
+- ⏰ **Auto-logout** - Security feature for inactive sessions
+- ⚙️ **Configurable** - Adjust refresh intervals to your needs
+- 🖥️ **System Monitoring** - CPU and RAM usage tracking
 
-## Getting Started
+## 🛠️ Tech Stack
+
+- **Next.js 13+** with App Router
+- **TypeScript**
+- **React 18+**
+- **Tailwind CSS**
+- **NextAuth.js** for authentication
+- **Express backend** for PM2 communication
+- **PM2** for process management
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -21,14 +53,14 @@ A beautiful, responsive web dashboard for managing PM2 processes built with Next
 
 ### Installation
 
-1. Clone the repository:
+1. **Clone the repository**
 
 ```bash
 git clone https://github.com/sacreations/pm2-dashboard.git
 cd pm2-dashboard
 ```
 
-2. Install dependencies:
+2. **Install dependencies**
 
 ```bash
 npm install
@@ -36,17 +68,18 @@ npm install
 yarn
 ```
 
-3. Create a `.env.local` file from the example:
+3. **Create environment file**
 
 ```bash
 cp .env.local.example .env.local
 ```
 
-4. Edit `.env.local` and update the values:
+4. **Configure environment variables**
 
+Edit `.env.local` and update:
 - Generate a random string for `NEXTAUTH_SECRET`
 - Set your admin username and password
-- Optional: Change the `PORT` if you want to run the server on a different port
+- Configure the port if needed
 
 ### Development
 
@@ -59,35 +92,18 @@ yarn dev
 ```
 
 The server will run on the port specified in your `.env.local` file (defaults to 3000).
-Open [http://localhost:3000](http://localhost:3000) (or your custom port) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) (or your custom port) with your browser.
 
 ### Production
 
-Build the application:
+Build and start the production server:
 
 ```bash
 npm run build
-# or
-yarn build
-```
-
-Start the production server:
-
-```bash
 npm run start
 # or
+yarn build
 yarn start
 ```
 
-## Security
-
-This dashboard should only be deployed in secure environments. Consider additional security measures:
-
-1. Use HTTPS
-2. Set up IP restrictions
-3. Use strong passwords
-4. Consider adding Two-Factor Authentication
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 📁 File Structure
