@@ -1,22 +1,22 @@
-# PM2 Dashboard
-
-![PM2](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg)
-
-A beautiful, responsive web dashboard for managing PM2 processes built with Next.js, React, TypeScript, and Tailwind CSS.
-
-**Quick Links:**
-
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Getting Started](#-getting-started)
-- [File Structure](#-file-structure)
-- [Security](#-security)
-- [License](#-license)
-
-![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![PM2](https://img.shields.io/badge/PM2-2B037A?style=for-the-badge&logo=pm2&logoColor=white)
+<div align="center">
+  <h1>PM2 Dashboard</h1>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="100" height="100" alt="PM2" />
+  <p>A beautiful, responsive web dashboard for managing PM2 processes built with Next.js, React, TypeScript, and Tailwind CSS.</p>
+  <p>
+    <a href="#-features">Features</a> •
+    <a href="#-tech-stack">Tech Stack</a> •
+    <a href="#-getting-started">Getting Started</a> •
+    <a href="#-file-structure">File Structure</a> •
+    <a href="#-security">Security</a> •
+    <a href="#-license">License</a>
+  </p>
+  <p>
+    <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+    <img src="https://img.shields.io-badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+    <img src="https://img.shields.io-badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCSS" />
+    <img src="https://img.shields.io-badge/PM2-2B037A?style=for-the-badge&logo=pm2&logoColor=white" alt="PM2" />
+  </p>
+</div>
 
 ## ✨ Features
 
